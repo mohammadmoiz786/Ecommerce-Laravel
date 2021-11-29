@@ -1,0 +1,185 @@
+/*-----------------------------
+** Cart Page CSS Start
+------------------------------*/
+
+.cartpage{
+    padding: 0px 0px 70px;
+    .left-area
+      .totla-price-area{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .left-area{
+          p{
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+        .right-area{
+          p{
+            font-size: 20px;
+            font-weight: 600;
+            span{
+              color: $base-color;
+            }
+          }
+        }
+      }
+      .cart-table{
+          border: 1px solid rgba(0, 0, 0, 0.1);
+        .table{
+            thead{
+                border-top: 0px;
+                tr{
+                    th{
+                     border-top: 0px;
+                     border-bottom: 0px;
+                    }
+                }
+            }
+            tbody{
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+               tr{
+                   td{
+                    border-top: 0px;
+                   }
+               }
+            }
+            tr{
+                border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+                &:last-child{
+                    border-bottom: 0px;
+                }
+                td{
+                    vertical-align: middle;
+                   &.product-img{
+                       width: 200px;
+                       img{
+                           width: 100%;
+                       }
+                       .name{
+                           margin-bottom: 0px;
+                           a{
+                            font-size: 14px;
+                            line-height: 20px;
+                            font-weight: 600;
+                            color: $heading-color;
+                           }
+                       }
+                   }
+                   .product-unit-price
+                   {
+                       font-weight: 600;
+                   }
+                   &.total-price{
+                       font-weight: 600;
+                   }
+                   span#color-bar{
+                       border-radius: 50%;
+                       width: 16px!important;
+                       height: 16px!important;
+                       border: 0px;
+                       margin-left: 10px;
+                       margin-top: 2px;
+                   }
+                }
+            }
+        }
+      }
+    }
+  
+    .right-area{
+      .order-box{    
+        box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 40px 25px 40px;
+        .title{
+          font-size: 16px;
+          font-weight: 700;
+          
+          color: #143250;
+          line-height: 28px;
+          margin-bottom: 15px;
+        }
+        .order-list{
+          border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+          li{
+            display: flex;
+            justify-content: space-between;
+            p{
+              font-size: 14px;
+              font-weight: 600;
+              b{
+                font-weight: 700;
+              }
+            }
+          }
+        }
+        .total-price{
+          display: flex;
+          justify-content: space-between;
+          font-weight: 600;
+          padding-top: 5px;
+        }
+        .cupon-box{
+          text-align: center;
+          margin-bottom: 30px;
+          #coupon-link{
+            font-size: 14px;
+            
+            font-weight: 600;
+            margin-bottom: 25px;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+          #coupon-form{
+            display: none;
+            &.show{
+              display: block!important;
+            }
+            input{
+              width: 190px;
+              height: 35px;
+              background: #f3f8fc;
+              border: 1px solid  rgba(0, 0, 0, 0.10);
+              padding: 0px 10px;
+              font-size: 14px;
+            }
+            button{
+              width: 80px;
+              height: 35px;
+              background: #fff;
+              border: 1px solid rgba(0, 0, 0, 0.15);
+              font-size: 14px;
+              
+              cursor: pointer;
+              transition: $transition;
+              &:hover{
+                background: $base-color;
+                color: #fff;
+                border-color: $base-color;
+              }
+            }
+          }
+        }
+        .order-btn{
+          width: 190px;
+          height: 50px;
+          line-height: 50px;
+          color: #fff;
+          background: $base-color;
+          border: 1px solid $base-color;
+           display: block;
+           margin-bottom: 0px;
+           text-align: center;
+           margin: 0 auto;
+           border-radius: 3px;
+           transition: $transition;
+           &:hover{
+             background: none;
+             color: $base-color;
+           }
+        }
+      }
+    }
+  

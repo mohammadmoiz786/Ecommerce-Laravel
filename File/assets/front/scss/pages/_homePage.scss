@@ -1,0 +1,905 @@
+
+.main-content{
+    margin-bottom: 30px;
+    .first-aside{
+        margin-top: 590px;
+    }
+}
+/*-----------------------------
+** Hero Area Start
+------------------------------*/
+.hero-area{
+    margin-top: 30px;
+    .mycol1{
+        width: 70%;
+        max-width: 70%;
+        flex: 30%;
+    }
+    .mycol2{
+        width: 30%;
+        flex: 30%;
+        max-width: 30%;
+    }
+}
+
+.hero-slider-wrapper{
+    position: relative;
+    .slide-progress {
+        width: 0%;
+        max-width: 100%;
+        height: 6px;
+        background: rgba(#000, 0.2);
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        left: 0;
+    }
+        .intro-carousel{
+            background-repeat: no-repeat!important;
+            background-position: center!important;
+            background-size: cover!important;
+        .intro-content{
+            height: 530px;
+            display: flex;
+            position: relative;
+            &.left {
+                .slider-content {
+                    text-align: left;
+                }
+            }
+            &.center {
+                .slider-content {
+                    text-align: center;
+                }
+            }
+            &.right {
+                .slider-content {
+                    text-align: right;
+                }
+            }
+            .slider-content{
+                padding: 0px 30px 0px;
+                align-self: center;
+                width: 100%;
+
+                // .layer-1{
+                //     transform: translateY(-100%);
+                //     opacity: 0;
+                //     transition: all 1s ease-in-out 0.4s;
+                // }
+                // .layer-2{
+                //     transform: translateY(100%);
+                //     opacity: 0;
+                //     transition: all 1s ease-in-out .7s;
+                // }
+                // .layer-3{
+                //     transform: translateY(100%);
+                //     opacity: 0;
+                //     transition: all 1s ease-in-out .9s;
+                // }
+
+                .title{
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+    
+                .text{
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+                .mybtn1{
+                    margin-top: 20px;
+                }
+            }
+        }
+        // &.owl-carousel {
+        //     .owl-item {
+        //         &.active {
+
+        //             .layer-1,
+        //             .layer-2,
+        //             .layer-3 {
+        //                 transform: translateY(0);
+        //                 opacity: 1;
+        //             }
+        //         }
+        //     }
+        // }
+    }
+}
+
+.hero-slider-wrapper .intro-carousel .intro-content.slide-one {
+    text-align: left; }
+.hero-slider-wrapper .intro-carousel .intro-content.slide-two {
+    text-align: center; }
+.hero-slider-wrapper .intro-carousel .intro-content.slide-three {
+    text-align: right; }
+
+
+.slider_right_banner{
+    .single-banner{
+        margin-bottom: 30px;
+        display: block;
+        img{
+            width: 100%;
+        }
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.owl-controls .owl-dots {
+display: block;
+position: absolute;
+text-align: center;
+margin-top: 0px;
+left: 50%;
+transform: translateX(-50%);
+bottom: 20px;
+z-index: 99;
+}
+
+.owl-controls .owl-dots .owl-dot {
+width: 6px;
+height: 6px;
+background: #333;
+display: inline-block;
+border-radius: 0px;
+border-radius: 50px;
+margin: 0px 3px 0px;
+-webkit-transition: 0.3s ease-in;
+-moz-transition: 0.3s ease-in;
+-o-transition: 0.3s ease-in;
+transition: 0.3s ease-in;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+}
+
+.owl-controls .owl-dots .owl-dot.active {
+background: $base-color;
+width: 40px
+}
+      
+
+/*-----------------------------
+** Hero Area End
+------------------------------*/
+
+/*-----------------------------
+** Deal Of The Day Start
+------------------------------*/
+.deal-of-the-day{
+    margin-top: 20px;
+    .flas-deal-slider{
+        position: relative;
+        margin-top: 20px;
+          .single-product-flas{
+              text-align: center;
+              border: 1px solid #ddd;
+              display: flex;
+              padding: 20px 20px 20px;
+              .img{
+                margin-right: 30px;
+                position: relative;
+                  img{
+                   width: 280px;
+                   height: 280px;
+                  }
+                  .sell-area{
+                    position: absolute;
+                    top: 20px;
+                    right: 0px;
+                    height: 100%;
+                    display: block;
+                    z-index: 9;
+                    .sale{
+                        text-align: center;
+                        line-height: 22px;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        color: #fff;
+                        z-index: 1;
+                        padding: 0px 8px 0px 15px;
+                        border-radius: 50px 0px 0px 50px;
+                        display: block;
+                        margin-top: 5px;
+                        background: #000;
+                    }
+                }
+              }
+              .content{
+                  text-align: left;
+                  flex: 1;
+                  .name{
+                      font-size: 16px;
+                      line-height: 26px;
+                      font-weight: 600;
+                      padding-top: 6px;
+                      transition: $transition;
+                  }
+                  .stars{
+                      margin: 0px;
+                      display: block;
+                      ul{
+                          li{
+                              i{
+                                  color: #ffc107;
+                                  font-size: 14px;
+                                  transition: $transition;
+                              }
+                          }
+                      }
+                  }
+                  .price{
+                      margin: 5px 0px 10px;
+                      @include transition;
+                      .old-price{
+                          font-size: 14px;
+                          display: inline-block;
+                          margin-right: 5px;
+                          position: relative;
+                          color: #777;
+                      }
+                      .new-price{
+                          font-size: 18px;
+                          font-weight: 600;
+                          @include transition;
+                      }
+                  }
+                  .action-meta{
+                        margin-bottom: 14px;
+                        margin-top: 24px;
+                        li{
+                            display: inline-block;
+                            margin-right: 4px;
+                            &:last-child{
+                                margin-right: 0px;
+                            }
+                            .wish{
+                                width: 35px;
+                                height: 35px;
+                                line-height: 34px;
+                                text-align: center;
+                                font-size: 14px;
+                                color: #777;
+                                border: 1px solid #ddd;
+                                display: inline-block;
+                                transition: $transition;
+                                &:hover{
+                                    background: #232f3e;
+                                    color: #fff;
+                                    border-color: #232f3e;
+                                }
+                            }
+                            .cart-btn{
+                                width: 35px;
+                                height: 35px;
+                                line-height: 34px;
+                                text-align: center;
+                                font-size: 14px;
+                                color: #fff;
+                                border: 1px solid #232f3e;
+                                background: #232f3e;
+                                display: inline-block;  
+                                transition: $transition;
+                                &:hover{
+                                    background: $base-color;
+                                    color: #fff;
+                                    border-color: $base-color;
+                                }
+                            }
+                            .compear{
+                                width: 35px;
+                                height: 35px;
+                                line-height: 34px;
+                                text-align: center;
+                                font-size: 14px;
+                                color: #777;
+                                border: 1px solid #ddd;
+                                display: inline-block;
+                                transition: $transition;
+                                &:hover{
+                                    background: #232f3e;
+                                    color: #fff;
+                                    border-color: #232f3e;
+                                }
+                            }
+                        }
+                    }
+                    .deal-counter{
+                        margin-top: 15px;
+                        border-radius: 3px;
+                        padding-top: 15px;
+                        span{
+                            display: inline-block;
+                            text-align: center;
+                            margin-right: 6px;
+                            margin-bottom: 4px;
+                            @include transition;
+                            span{
+                                display: inline-block;
+                                font-weight: 700;
+                                font-size: 15px;
+                                width: 40px;
+                                height: 40px;
+                                line-height: 40px;
+                                border-radius: 50%;
+                                display: inline-block;
+                                background: #f2f3f7;
+                                @include transition;
+                            }
+                            &:last-child{
+                                margin-right: 0px;
+                            }
+                            small{
+                                display: block;
+                                font-weight: 600;
+                                font-size: 12px;
+                                @include transition;
+                            }
+                        }
+                    }
+                  
+              }
+          }
+      }
+      .owl-carousel {
+          .owl-controls{
+            .owl-nav{
+                .owl-prev,
+                .owl-next
+                {
+                    font-size: 16px;
+                    position: absolute;
+                    text-align: center;
+                    line-height: 80px;
+                    width: 20px;
+                    height: 80px;
+                    background: #232f3e;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    opacity: 1;
+                    color: #fff;
+                    border-radius: 0px;
+                    @include transition;
+                    &:hover{
+                        background: $base-color;
+                    }
+                }
+                .owl-prev{
+                    right: 0px;
+                    border-radius: 10px 0px 0px 10px;
+                    i{ 
+                        transform: rotate(-180deg);
+                    }
+                }
+                .owl-next{
+                    left: 0px;
+                    border-radius: 0px 10px 10px 0px;
+                    i{ 
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+        }
+      }
+    
+}
+
+/*-----------------------------
+** Deal Of The Day End
+------------------------------*/
+
+/*-----------------------------
+** Product Tab Area Start
+------------------------------*/
+.product-tab{
+    margin-top: 20px;
+    .top-header-area{
+        display: flex;
+        justify-content: space-between;
+        .nav{
+            li{
+                a{
+                    position: relative;
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 0px;
+                    margin: 0px 10px;
+                    display: flex;
+                    height: 100%;
+                    line-height: 35px;
+                    color: $body-color;
+                    &::before{
+                        position: absolute;
+                        content: "";
+                         bottom: -2px;
+                         left: 0px;
+                         width: 100%;
+                         height: 3px;
+                         background: $base-color;
+                         opacity: 0;
+                    }
+                    &.active{
+                        color: $base-color;
+                        &::before{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tab-content{
+        margin-top: 25px;
+       .single-product{
+           margin-bottom: 30px;
+       }
+    }
+}
+.single-product{
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    @include transition;
+    overflow: hidden;
+    background: #fff;
+    .img{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .sell-area{
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            height: 100%;
+            display: block;
+            z-index: 9;
+            .sale{
+                text-align: center;
+                line-height: 22px;
+                font-size: 12px;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: #fff;
+                z-index: 1;
+                padding: 0px 8px 0px 15px;
+                border-radius: 50px 0px 0px 50px;
+                display: block;
+                margin-top: 5px;
+                background: #000;
+            }
+        }
+    }
+    .content{
+        position: relative;
+        padding: 10px 10px 10px;
+        background: #fff;
+        top: 0px;
+        transition: $transition;
+        .price{
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 0px;
+            del{
+                color: #777;
+            }
+        }
+        .stars{
+            margin-bottom: 5px;
+            li{
+                display: inline-block;
+                font-size: 12px;
+                color: #fac451;
+                span{
+                    color: $body-color;
+                }
+            }
+        }
+        .box{
+            height: 40px;
+            position: relative;
+            .name{
+                font-size: 14px;
+                transition: $transition;
+            }
+            .action-meta{
+                margin-top: 40px;
+                top: 50%;
+                left: 0%;
+                transform: translateY(-50%);
+                position: absolute;
+                width: 100%;
+                opacity: 0;
+                transition: $transition;
+                li{
+                    display: inline-block;
+                    .wish{
+                        width: 35px;
+                        height: 35px;
+                        line-height: 34px;
+                        text-align: center;
+                        font-size: 14px;
+                        color: #777;
+                        border: 1px solid #ddd;
+                        display: inline-block;
+                        transition: $transition;
+                        &:hover{
+                            background: #232f3e;
+                            color: #fff;
+                            border-color: #232f3e;
+                        }
+                    }
+                    .cart-btn{
+                        width: 35px;
+                        height: 35px;
+                        line-height: 34px;
+                        text-align: center;
+                        font-size: 14px;
+                        color: #fff;
+                        border: 1px solid $bg-color;
+                        display: inline-block;  
+                        background: $bg-color;
+                        transition: $transition;
+                        &:hover{
+                            background: $base-color;
+                            border-color: $base-color;
+                        }
+                    }
+                    .compear{
+                        width: 35px;
+                        height: 35px;
+                        line-height: 34px;
+                        text-align: center;
+                        font-size: 14px;
+                        color: #777;
+                        border: 1px solid #ddd;
+                        display: inline-block;
+                        transition: $transition;
+                        &:hover{
+                            background: #232f3e;
+                            color: #fff;
+                            border-color: #232f3e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &:hover{
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-3px);
+        .content{
+            top: -35px;
+            transition: $transition;
+            .box{
+                .action-meta{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+/*-----------------------------
+** Product Tab Area End
+------------------------------*/
+
+/*-----------------------------
+** Product-row Area Start
+------------------------------*/
+.product-row{
+    padding: 0px 0px 10px;
+    .top-header-area{
+        margin-bottom: 20px;
+    }
+    .single-product{
+        margin-bottom: 30px;
+    }
+}
+
+/*-----------------------------
+** Product-row Area Start
+------------------------------*/
+
+/*-----------------------------
+** Banner Area Start
+------------------------------*/
+.banner{
+    img{
+        width: 100%;
+    }
+}
+/*-----------------------------
+** Banner Area Start
+------------------------------*/
+
+/*-----------------------------
+** Product landscape Start
+------------------------------*/
+.product-landscape{
+    margin-bottom: 30px;
+    .product-landscape-list{
+        margin-top: 30px;
+        li{
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            .single-product-landscape{
+                background: #f2f3f7;
+                position: relative;
+                transition: $transition;
+                &::after{
+                position: absolute;
+                content: "";
+                bottom: 0px;
+                left: 0px;
+                height: 1px;
+                width: 0%;
+                background: $base-color;
+                transition: $transition;
+                }
+                &:hover{
+                    transform: translateY(-5px);
+                    &::after{
+                        width: 100%;  
+                    }
+                }
+            }
+        }
+    }
+}
+.single-product-landscape{
+    display: flex;
+    padding: 15px;
+    .img{
+        margin-right: 15px;
+        img{
+            width: 150px;
+        }
+    }
+    .content{
+        flex: 1;
+        align-self: center;
+        .price{
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 0px;
+            del{
+                color: #777;
+            }
+        }
+        .stars{
+            margin-bottom: 5px;
+            li{
+                display: inline-block;
+                font-size: 12px;
+                margin-bottom: 0px;
+                color: #fac451;
+                span{
+                    color: $body-color;
+                }
+            }
+        }
+        .box{
+            height: 40px;
+            position: relative;
+            .name{
+                font-size: 14px;
+                transition: $transition;
+            }
+            .action-meta{
+                top: 50%;
+                left: 0%;
+                transform: translateY(-50%);
+                position: absolute;
+                width: 100%;
+                opacity: 0;
+                transition: $transition;
+                li{
+                    display: inline-block;
+                    margin-bottom: 0px;
+                    .wish{
+                        width: 35px;
+                        height: 35px;
+                        line-height: 34px;
+                        text-align: center;
+                        font-size: 14px;
+                        color: #777;
+                        border: 1px solid #ddd;
+                        display: inline-block;
+                        transition: $transition;
+                        &:hover{
+                            background: #232f3e;
+                            color: #fff;
+                            border-color: #232f3e;
+                        }
+                    }
+                    .cart-btn{
+                        width: 35px;
+                        height: 35px;
+                        line-height: 34px;
+                        text-align: center;
+                        font-size: 14px;
+                        color: #fff;
+                        border: 1px solid $bg-color;
+                        background: $bg-color;
+                        display: inline-block;  
+                        transition: $transition;
+                        &:hover{
+                            background: $base-color;
+                            border-color: $base-color;
+                        }
+                    }
+                    .compear{
+                        width: 35px;
+                        height: 35px;
+                        line-height: 34px;
+                        text-align: center;
+                        font-size: 14px;
+                        color: #777;
+                        border: 1px solid #ddd;
+                        display: inline-block;
+                        transition: $transition;
+                        &:hover{
+                            background: #232f3e;
+                            color: #fff;
+                            border-color: #232f3e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &:hover{
+        .content{
+            .box{
+                .action-meta{
+                    opacity: 1;
+                }
+                .name{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+/*-----------------------------
+** Product landscape End
+------------------------------*/
+
+
+/*-----------------------------
+** Service Area Start
+------------------------------*/
+.our-service{
+    margin-top: 30px;
+    .service-box{
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        .header{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            .title{
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 0px;
+            }
+        }
+        .service-list{
+            margin-top: 15px;
+            margin-bottom: 15px;
+            li{
+                display: block;
+                padding: 0px 20px;
+                margin-bottom: 13px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                &:last-child{
+                    margin-bottom: 0px;
+                    padding-bottom: 0px;
+                    border-bottom: 0px;
+                }
+                .single-service{
+                    display: flex;
+                    .icon{
+                        width: 30px;
+                        margin-right: 10px;
+                        align-self: center;
+                        }
+                    }
+                    .content{
+                        .title{
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                        p{
+                            font-size: 14px;
+                            line-height: 24px;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+}
+/*-----------------------------
+** Service Area Start
+------------------------------*/
+
+
+/*-----------------------------
+** Aside Banner Area Start
+------------------------------*/
+.aside-banner{
+    margin-top: 30px;
+    img{
+        width: 100%;
+    }
+}
+
+/*-----------------------------
+** Aside Banner Area End
+------------------------------*/
+
+/*-----------------------------
+** Product Widget Start
+------------------------------*/
+.product-widget{
+    .product-widget-box{
+        margin-top: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        .header{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            .title{
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 0px;
+            }
+        }
+        .product-widget-content{
+            padding: 10px 7px;
+        }
+        .single-product-landscape{
+            border: 0px;
+            padding: 0px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            &:last-child{
+                border-bottom: 0px;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+            .img{
+                align-self: center;
+                img{
+                    width: 80px;
+                }
+            }
+            &:hover{
+                .content{
+                    .box{
+                        .name{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+/*-----------------------------
+** Product Widget Start
+------------------------------*/
+
+
+
+
+
+
+
+

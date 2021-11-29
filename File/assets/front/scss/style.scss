@@ -1,0 +1,18 @@
+@import "main/_variables";
+@import "main/_mixins";
+@import "main/_global";
+@import "main/_normalize";
+
+//=Section scss
+@import "sections/_footer";
+@import "sections/_header";
+
+
+//=Page scss
+@import "pages/_homePage";
+@import "pages/_category";
+@import "pages/_cart";
+@import "pages/_blog";
+@import "pages/_product-details";
+@import "pages/_other";
+@import "pages/_custom";
